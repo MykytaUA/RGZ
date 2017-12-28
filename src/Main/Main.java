@@ -70,17 +70,27 @@ public class Main{
                             break;
 
                         case 8:
+                            System.out.println("Номер строки>> ");
+                            System.out.println(matrix.nullPlacesInRow(scanner.nextInt()));
+                            break;
+
+                        case 9:
+                            System.out.println("Номер столбца>> ");
+                            System.out.println(matrix.nullPlacesInColumn(scanner.nextInt()));
+                            break;
+
+                        case 10:
                             Iterator iterator = matrix.iterator();
                             while (iterator.hasNext()) {
                                 System.out.println(iterator.next());
                             }
                             break;
 
-                        case 9:
+                        case 11:
                             matrix.show();
                             break;
 
-                        case 10:
+                        case 0:
                             System.exit(1);
 
                         default:
