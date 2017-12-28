@@ -9,6 +9,7 @@ public class Main{
     public static void main(String[] args) {
 
         try {
+            System.out.println(" Добро пожаловать в приложение обработки матрицы");
             System.out.println("Введите количество строк и столбцов>>> ");
             Scanner scanner = new Scanner(System.in);
             Matrix matrix = new Matrix(scanner.nextInt(), scanner.nextInt());
