@@ -127,7 +127,27 @@ public class Matrix implements Iterable {
 
         return count;
     }
+   
+public int nullPlacesInRow(int row){
+        int count = 0;
 
+        for (int i = 0; i < countElements; i++){
+            if (indexes[i]/countColumns == row)
+                count++;
+        }
+
+        return countColumns - count;
+    }
+    public int nullPlacesInColumn(int column){
+        int count = 0;
+
+        for (int i = 0; i < countElements; i++){
+            if (indexes[i] % countColumns == column)
+                count++;
+        }
+
+        return countRows - count;
+    }
 
 
     @Override
