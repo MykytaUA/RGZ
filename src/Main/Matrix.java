@@ -40,7 +40,7 @@ public class Matrix implements Iterable {
                    elements.add(rand.nextInt(9));
                    indexes[z] = i * countColumns + j;
                    z++;
-               }
+               } else  System.out.println("Некорректная матрица");
            }
    }
 
